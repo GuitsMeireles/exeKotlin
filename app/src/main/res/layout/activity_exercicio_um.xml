@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExercicioUmActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/numero_1"
+        android:layout_width="372dp"
+        android:layout_height="82dp"
+        android:hint="Digite o primeiro número inteiro"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/numero_2"
+        android:layout_width="372dp"
+        android:layout_height="72dp"
+        android:hint="Digite o segundo número inteiro"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculaButton"
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/somaTextView"
+        android:layout_width="375dp"
+        android:layout_height="43dp" />
+
+    <TextView
+        android:id="@+id/subtracaoTextView"
+        android:layout_width="373dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/multiplicacaoTextView"
+        android:layout_width="375dp"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:id="@+id/divisaoTextView"
+        android:layout_width="376dp"
+        android:layout_height="43dp" />
+
+    <Button
+        android:id="@+id/bt_voltar"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>
