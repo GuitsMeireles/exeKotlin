@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe4.setOnClickListener{
+            val i = Intent(this, ExercicioQuatroActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }

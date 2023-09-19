@@ -14,7 +14,7 @@
         android:layout_marginBottom="431dp"
         android:ems="10"
         android:hint="Insira um  valor em °C"
-        android:inputType="text"
+        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
