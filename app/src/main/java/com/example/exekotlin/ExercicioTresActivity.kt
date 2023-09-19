@@ -11,5 +11,8 @@ class ExercicioTresActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExercicioTresBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
     }
 }
