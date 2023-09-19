@@ -1,6 +1,7 @@
 package com.example.exekotlin
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
@@ -18,6 +19,8 @@ class ExercicioDoisActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExercicioDoisBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         binding.btSair.setOnClickListener {
             finish()
@@ -56,5 +59,16 @@ class ExercicioDoisActivity : AppCompatActivity() {
             builder.append("$numero x $i = $resultado\n")
         }
         textView.text = builder.toString()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+
     }
 }

@@ -1,6 +1,7 @@
 package com.example.exekotlin
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.exekotlin.databinding.ActivityExercicioUmBinding
 
@@ -11,6 +12,8 @@ class ExercicioUmActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExercicioUmBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         binding.btVoltar.setOnClickListener {
             finish()
@@ -33,6 +36,17 @@ class ExercicioUmActivity : AppCompatActivity() {
             binding.subtracaoTextView.text = "Subtração: $subtracao"
             binding.multiplicacaoTextView.text = "Multiplicação: $multiplicacao"
             binding.divisaoTextView.text = "Divisão: $divisao"
+        }
+
+        fun onOptionsItemSelected(item: MenuItem): Boolean {
+            when (item.itemId) {
+                android.R.id.home -> {
+                    finish()
+                    return true
+                }
+            }
+            return super.onOptionsItemSelected(item)
+
         }
     }
 }

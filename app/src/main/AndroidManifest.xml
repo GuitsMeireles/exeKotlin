@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ExeKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".ExercicioTresActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExercicioDoisActivity"
             android:exported="false" />
         <activity

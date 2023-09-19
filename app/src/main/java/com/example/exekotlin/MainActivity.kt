@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe3.setOnClickListener{
+            val i = Intent(this, ExercicioTresActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }
