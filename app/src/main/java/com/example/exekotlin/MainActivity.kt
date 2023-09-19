@@ -33,5 +33,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe5.setOnClickListener{
+            val i = Intent(this, ExercicioCincoActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }

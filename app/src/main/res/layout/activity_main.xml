@@ -60,4 +60,14 @@
         app:layout_constraintStart_toStartOf="@+id/bt_exe_2"
         app:layout_constraintTop_toBottomOf="@+id/bt_exe_2" />
 
+    <Button
+        android:id="@+id/bt_exe5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="48dp"
+        android:text="Exercicio 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_exe_3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
