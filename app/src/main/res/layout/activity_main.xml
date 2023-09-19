@@ -64,10 +64,20 @@
         android:id="@+id/bt_exe5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
         android:text="Exercicio 5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_exe_3" />
+
+    <Button
+        android:id="@+id/bt_exe6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Exercicio 6"
+        app:layout_constraintEnd_toEndOf="@+id/bt_exe4"
+        app:layout_constraintStart_toStartOf="@+id/bt_exe4"
+        app:layout_constraintTop_toBottomOf="@+id/bt_exe4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
