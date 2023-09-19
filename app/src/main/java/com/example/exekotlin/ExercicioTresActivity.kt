@@ -12,7 +12,16 @@ class ExercicioTresActivity : AppCompatActivity() {
         binding = ActivityExercicioTresBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btVoltar2.setOnClickListener {
+            finish()
+        }
 
+        binding.btConverter.setOnClickListener {
+            val celsius = binding.etValor.text.toString().toDouble()
+            val fahrenheit = celsius * 1.8 + 32
+
+            binding.tvResultado.text = "$fahrenheit °F"
+        }
 
     }
 }
