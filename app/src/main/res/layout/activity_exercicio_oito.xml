@@ -7,7 +7,7 @@
     tools:context=".ExercicioOitoActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_numeros"
         android:layout_width="340dp"
         android:layout_height="0dp"
         android:layout_marginStart="45dp"
@@ -21,26 +21,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_separar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
         android:text="Iniciar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_numeros" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_resultados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="100dp"
         android:text=""
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_separar" />
 
     <Button
         android:id="@+id/btn_voltar"
@@ -51,6 +53,6 @@
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_numeros" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

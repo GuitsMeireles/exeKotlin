@@ -23,24 +23,24 @@ class ExercicioOitoActivity : AppCompatActivity() {
             finish()
         }
 
-        editText = binding.editText
-        button = binding.button
-        textView = binding.textView
+        editText = binding.etNumeros
+        button = binding.btSeparar
+        textView = binding.tvResultados
 
         button.setOnClickListener {
-            processarNumeros()
+            converterNumeros()
         }
     }
 
-    private fun processarNumeros() {
+    private fun converterNumeros() {
         val numerosStr = editText.text.toString().trim()
-        val numeros = numerosStr.split(" ").mapNotNull { it.trim().toIntOrNull() }
+        val numeros = numerosStr.split(" ").mapNotNull { it.trim().toDoubleOrNull() }
 
-        val impares = mutableListOf<Int>()
-        val pares = mutableListOf<Int>()
+        val impares = mutableListOf<Double>()
+        val pares = mutableListOf<Double>()
 
         for (numero in numeros) {
-            if (numero % 2 == 0) {
+            if (numero % 2.0 == 0.0) {
                 pares.add(numero)
             } else {
                 impares.add(numero)

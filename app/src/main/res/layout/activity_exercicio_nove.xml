@@ -62,23 +62,28 @@
         android:id="@+id/btn_calculo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="172dp"
         android:text="Calcular"
-        app:layout_constraintStart_toStartOf="@+id/et_numero5"
-        app:layout_constraintTop_toBottomOf="@+id/et_numero5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginStart="16dp"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/btn_calculo"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calculo" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
 
     <Button
         android:id="@+id/btn_voltar2"
