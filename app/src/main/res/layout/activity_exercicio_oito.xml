@@ -14,7 +14,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="545dp"
-        android:hint="Digite 5 números separados por vírgula"
+        android:hint="Digite 5 números separados por um espaçamento"
         app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -53,5 +53,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe9.setOnClickListener{
+            val i = Intent(this, ExercicioNoveActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }
