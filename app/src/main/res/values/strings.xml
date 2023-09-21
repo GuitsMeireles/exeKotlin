@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ExeKotlin</string>
+    <string name="calculate">Calcular</string>
+    <string name="number_type_it">Digite um numero</string>
+    <string name="btn_return">Voltar</string>
+    <string name="celsius">Insira um  valor em °C</string>
+    <string name="converter">Converter</string>
+    <string name="inverter">Inverter</string>
+    <string name="word">Digite uma palavra</string>
+    <string name="add">Adicionar</string>
+    <string name="fruit">Digite uma fruta</string>
+    <string name="init">Iniciar</string>
 </resources>

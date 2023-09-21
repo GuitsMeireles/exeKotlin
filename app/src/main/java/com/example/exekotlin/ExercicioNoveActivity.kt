@@ -8,6 +8,7 @@ class ExercicioNoveActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityExercicioNoveBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityExercicioNoveBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -15,7 +16,7 @@ class ExercicioNoveActivity : AppCompatActivity() {
         var textView = binding.txtResultado
 
 
-        binding.btnVoltar2.setOnClickListener {
+        binding.btnReturn.setOnClickListener {
             finish()
         }
 

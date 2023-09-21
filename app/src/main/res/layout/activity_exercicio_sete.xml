@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,21 +9,28 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="395dp"
-        android:layout_height="73dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:hint="Digite uma palavra"
-        android:inputType="text" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:hint="@string/word"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText"
-        android:layout_centerHorizontal="true"
-        android:text="Inverter"
-        android:onClick="inverterPalavra"/>
+        android:layout_marginBottom="46dp"
+        android:onClick="inverterPalavra"
+        android:text="@string/inverter"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,15 +38,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="155dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bt_voltar3"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/bt_voltar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
-        android:text="Voltar" />
-</RelativeLayout>
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/btn_return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginBottom="101dp"
+        android:text="Escreva um programa que lê uma palavra e a escreve de volta ao contrário."
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,51 +8,62 @@
 
     <EditText
         android:id="@+id/et_numeros"
-        android:layout_width="340dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="45dp"
+        android:layout_width="331dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="545dp"
         android:hint="Digite 5 números separados por um espaçamento"
-        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/bt_separar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:text="Iniciar"
+        android:layout_marginTop="276dp"
+        android:text="@string/init"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_numeros" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_resultados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="112dp"
         android:text=""
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_separar" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_separar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginBottom="17dp"
-        android:text="Voltar"
+        android:layout_marginStart="32dp"
+        android:text="@string/btn_return"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_numeros" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Escreva um programa que lê 5 números. Ao final, escreva primeiro todos os ímpares, depois todos os pares."
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

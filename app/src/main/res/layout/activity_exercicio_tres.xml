@@ -13,7 +13,7 @@
         android:layout_marginTop="173dp"
         android:layout_marginBottom="431dp"
         android:ems="10"
-        android:hint="Insira um  valor em °C"
+        android:hint="@string/celsius"
         android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Converter"
+        android:text="@string/converter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,8 +56,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginBottom="22dp"
-        android:text="Voltar"
+        android:text="@string/btn_return"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_valor" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Escreva um programa que converte temperaturas de Celsius para Fahrenheit."
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

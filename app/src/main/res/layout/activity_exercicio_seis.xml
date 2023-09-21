@@ -14,11 +14,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginLeft="-3dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginRight="0dp"
-        android:hint="Digite uma fruta" />
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginRight="-3dp"
+        android:hint="@string/fruit" />
 
     <Button
         android:id="@+id/buttonAdicionar"
@@ -30,7 +30,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
-        android:text="Adicionar" />
+        android:text="@string/add" />
 
     <Button
         android:id="@+id/bt_volt"
@@ -42,7 +42,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
-        android:text="Voltar" />
+        android:text="@string/btn_return" />
 
     <TextView
         android:id="@+id/textViewLista"
@@ -58,5 +58,15 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="-4dp"
         android:layout_marginRight="-4dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="627dp"
+        android:text="Escreva um programa que lê o nome de 5 frutas e armazena num carrinho de compras. Ao final da entrada dos 5 itens, exiba a lista completa."
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
 
 </RelativeLayout>

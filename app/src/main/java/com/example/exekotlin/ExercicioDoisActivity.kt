@@ -22,7 +22,7 @@ class ExercicioDoisActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        binding.btSair.setOnClickListener {
+        binding.btVoltar.setOnClickListener {
             finish()
         }
 
