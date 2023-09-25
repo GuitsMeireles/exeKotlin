@@ -58,5 +58,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe10.setOnClickListener{
+            val i = Intent(this, ExerciseTenActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }
