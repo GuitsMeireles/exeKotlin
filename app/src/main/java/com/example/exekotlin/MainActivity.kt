@@ -73,5 +73,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        binding.btExe13.setOnClickListener{
+            val i = Intent(this, ExerciseThirteenActivity::class.java)
+            startActivity(i)
+        }
+
     }
 }
