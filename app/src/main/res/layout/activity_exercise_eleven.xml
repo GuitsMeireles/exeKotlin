@@ -13,7 +13,7 @@
         android:id="@+id/et_word"
         android:layout_width="376dp"
         android:layout_height="60dp"
-        android:hint="Digite uma palavra"
+        android:hint="@string/esc_palavra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
@@ -25,7 +25,6 @@
         android:id="@+id/btn_converter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onConvertClick"
         android:text="@string/converter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +43,7 @@
         app:layout_constraintVertical_bias="0.703" />
 
     <Button
-        android:id="@+id/btn_back_2"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_return"
@@ -56,11 +55,11 @@
         app:layout_constraintVertical_bias="0.991" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tv_exe_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="564dp"
-        android:text="Escreva um programa que lê uma palavra e escreve de volta com os caracteres ímpares em maiúsculo."
+        android:text="@string/onze"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -19,38 +19,38 @@ class ExerciseThirteenActivity : AppCompatActivity() {
         binding = ActivityExerciseThirteenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBack4.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             finish()
         }
 
-        editTextName = binding.etName
-        editTextHeight = binding.etHeight
-        editTextWeight = binding.etWeight
-        textViewResult = binding.tvResult
-    }
+        binding.btnCalImc.setOnClickListener {
+            val name = editTextName.text.toString()
+            val heightText = editTextHeight.text.toString()
+            val weightText = editTextWeight.text.toString()
 
-    fun onCalculateIMCClick(view: View) {
-        val name = editTextName.text.toString()
-        val heightText = editTextHeight.text.toString()
-        val weightText = editTextWeight.text.toString()
+            if (name.isNotEmpty() && heightText.isNotEmpty() && weightText.isNotEmpty()) {
+                val height = heightText.toDouble()
+                val weight = weightText.toDouble()
+                val bmi = calculateBMI(height, weight)
+                val result = "Nome: $name, IMC: ${"%.2f".format(bmi)}"
 
-        if (name.isNotEmpty() && heightText.isNotEmpty() && weightText.isNotEmpty()) {
-            val height = heightText.toDouble()
-            val weight = weightText.toDouble()
-            val bmi = calculateBMI(height, weight)
-            val result = "Nome: $name, IMC: ${"%.2f".format(bmi)}"
+                textViewResult.append("$result\n")
 
-            textViewResult.append("$result\n")
+                // Verifica se o IMC está fora do ideal
+                if (bmi < 18.5 || bmi > 25) {
+                    textViewResult.append("Fora do peso ideal!\n")
+                }
 
-            // Verifica se o IMC está fora do ideal
-            if (bmi < 18.5 || bmi > 25) {
-                textViewResult.append("Fora do peso ideal!\n")
+                // Limpa os campos
+                editTextName.text.clear()
+                editTextHeight.text.clear()
+                editTextWeight.text.clear()
             }
 
-            // Limpa os campos
-            editTextName.text.clear()
-            editTextHeight.text.clear()
-            editTextWeight.text.clear()
+            editTextName = binding.etName
+            editTextHeight = binding.etHeight
+            editTextWeight = binding.etWeight
+            textViewResult = binding.tvResult
         }
     }
 

@@ -20,19 +20,19 @@ class ExerciseElevenActivity : AppCompatActivity() {
         binding = ActivityExerciseElevenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBack2.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             finish()
+        }
+
+        binding.btnConverter.setOnClickListener {
+            val inputText = editText.text.toString()
+            val convertedText = convertToUpperCaseOddChars(inputText)
+            textView.text = convertedText
         }
 
         editText = binding.etWord
         textView = binding.tvResult
         button = binding.btnConverter
-    }
-
-    fun onConvertClick(view: View) {
-        val inputText = editText.text.toString()
-        val convertedText = convertToUpperCaseOddChars(inputText)
-        textView.text = convertedText
     }
 
     private fun convertToUpperCaseOddChars(input: String): String {

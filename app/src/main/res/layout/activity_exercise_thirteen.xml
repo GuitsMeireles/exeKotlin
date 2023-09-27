@@ -48,7 +48,6 @@
         android:id="@+id/btn_cal_imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCalculateIMCClick"
         android:text="Calcular IMC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +70,7 @@
         app:layout_constraintVertical_bias="0.669" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tv_exe_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Escreva um programa que lê nome, altura e peso de 5 pessoas, calcula o IMC de cada um e ao final informa se alguém está fora do peso ideal (o IMC ideal é entre 18,5 e 25)."
@@ -85,7 +84,7 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/btn_back4"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_return"

@@ -22,7 +22,7 @@
         android:id="@+id/bt_separar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="356dp"
         android:text="@string/init"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -57,8 +57,9 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:text="Escreva um programa que lê 5 números. Ao final, escreva primeiro todos os ímpares, depois todos os pares."
         android:textSize="16sp"

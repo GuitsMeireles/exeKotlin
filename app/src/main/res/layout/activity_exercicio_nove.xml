@@ -10,35 +10,40 @@
         android:id="@+id/et_numero1"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="172dp"
         android:ems="10"
         android:hint="@string/number_type_it"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
 
     <EditText
         android:id="@+id/et_numero2"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="240dp"
         android:ems="10"
         android:hint="@string/number_type_it"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
 
     <EditText
         android:id="@+id/et_numero3"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="312dp"
         android:ems="10"
         android:hint="@string/number_type_it"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,27 +51,30 @@
         android:id="@+id/et_numero4"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/number_type_it"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <EditText
         android:id="@+id/et_numero5"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="452dp"
         android:ems="10"
         android:hint="@string/number_type_it"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
 
     <Button
         android:id="@+id/btn_calculo"
@@ -90,10 +98,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/btn_return"
@@ -103,15 +111,22 @@
         android:layout_marginBottom="21dp"
         android:text="@string/btn_return"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="539dp"
         android:text="Escreva um programa que lê 5 números e informa o maior, o menor e a média deles."
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

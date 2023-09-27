@@ -22,27 +22,27 @@ class ExerciseTwelveActivity : AppCompatActivity() {
         binding = ActivityExerciseTwelveBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBack3.setOnClickListener {
+        binding.btnBack.setOnClickListener {
             finish()
         }
 
-        editTextName = binding.etName
-        editTextAge = binding.etAge
-        textViewResult = binding.tvResult
-    }
+        binding.btnAddPeople.setOnClickListener {
+            val name = editTextName.text.toString()
+            val ageText = editTextAge.text.toString()
 
-    fun onAddPersonClick(view: View) {
-        val name = editTextName.text.toString()
-        val ageText = editTextAge.text.toString()
+            if (name.isNotEmpty() && ageText.isNotEmpty()) {
+                val age = ageText.toInt()
+                people.add(Pair(name, age))
+                editTextName.text.clear()
+                editTextAge.text.clear()
 
-        if (name.isNotEmpty() && ageText.isNotEmpty()) {
-            val age = ageText.toInt()
-            people.add(Pair(name, age))
-            editTextName.text.clear()
-            editTextAge.text.clear()
+                if (people.size == 5) {
+                    displayResult()
+                }
 
-            if (people.size == 5) {
-                displayResult()
+                editTextName = binding.etName
+                editTextAge = binding.etAge
+                textViewResult = binding.tvResult
             }
         }
     }
@@ -53,7 +53,10 @@ class ExerciseTwelveActivity : AppCompatActivity() {
         val totalAge = people.sumBy { it.second }
         val averageAge = totalAge.toDouble() / people.size
 
-        val result = "Mais novo: ${youngest?.first}, Mais velho: ${oldest?.first}, Média de idade: ${"%.2f".format(averageAge)}"
+        val result =
+            "Mais novo: ${youngest?.first}, Mais velho: ${oldest?.first}, Média de idade: ${
+                "%.2f".format(averageAge)
+            }"
         textViewResult.text = result
     }
 }

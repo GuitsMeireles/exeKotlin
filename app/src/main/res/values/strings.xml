@@ -10,4 +10,12 @@
     <string name="add">Adicionar</string>
     <string name="fruit">Digite uma fruta</string>
     <string name="init">Iniciar</string>
+    <string name="doze">Escreva um programa que lê nome e idade de 5 pessoas e ao final informa quem é o mais novo, o mais velho e qual a média de idade.</string>
+    <string name="addPeople">Adicionar Pessoa</string>
+    <string name="onze">Escreva um programa que lê uma palavra e escreve de volta com os caracteres ímpares em maiúsculo.</string>
+    <string name="esc_palavra">Escreva uma palavra</string>
+    <string name="name">Nome</string>
+    <string name="age">Idade</string>
+    <string name="height">Altura</string>
+    <string name="Weight">Peso</string>
 </resources>

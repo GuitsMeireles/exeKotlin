@@ -40,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/bt_converter2"
@@ -82,12 +82,13 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="345dp"
+        android:layout_height="106dp"
         android:layout_marginTop="16dp"
         android:text="Escreva um programa que recebe a cotação do dólar do dia e, depois, recebe um valor em reais. A saída é a quantia em dólares. Use formatação de saída para exibir os valores de acordo com cada representação de moeda."
         android:textSize="16sp"
         android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

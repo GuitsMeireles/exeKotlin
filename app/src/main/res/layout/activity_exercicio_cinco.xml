@@ -60,12 +60,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="347dp"
+        android:layout_height="81dp"
         android:layout_marginTop="73dp"
         android:text="Escreva um programa que realiza conversão de medidas de polegadas em centímetros."
         android:textSize="16sp"
         android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

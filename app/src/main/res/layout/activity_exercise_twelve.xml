@@ -35,8 +35,7 @@
         android:id="@+id/btn_add_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onAddPersonClick"
-        android:text="Adicionar Pessoa"
+        android:text="@string/addPeople"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -58,7 +57,7 @@
         app:layout_constraintVertical_bias="0.692" />
 
     <Button
-        android:id="@+id/btn_back_3"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_return"
@@ -70,10 +69,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tv_exe_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escreva um programa que lê nome e idade de 5 pessoas e ao final informa quem é o mais novo, o mais velho e qual a média de idade."
+        android:text="@string/doze"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
