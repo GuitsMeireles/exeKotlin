@@ -8,9 +8,9 @@
 
 </p>
 
-## Caso seja do seu interesse olhar melhor quais são os exercicios e até realiza-los em busca de aprendizado vou disponibilizar o link do mesmo.
+# Caso seja do seu interesse olhar melhor quais são os exercicios e até realiza-los em busca de aprendizado vou disponibilizar o link do mesmo.
 
-[Lista com os exercicios!!](https://docs.google.com/document/d/11x7oST-eInszg16hkSrhc1FKYngvwK_4-0WEWyKJh20/edit?usp=sharing)
+## [Lista com os exercicios!!](https://docs.google.com/document/d/11x7oST-eInszg16hkSrhc1FKYngvwK_4-0WEWyKJh20/edit?usp=sharing)
 
 # Envolvidos
 
