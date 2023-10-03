@@ -1,10 +1,26 @@
-# exeKotlin
+# Exercicios De Lógica de Programação em Kotlin
 
-Lista de Exercícios de Logica de programação
+### o objetivo é proporcionar a prática na lógica de programação ao mesmo tempo que a linguagem Kotlin e os componentes do Android para consolidar um entendimento sobre o assunto.
 
-![Screenshot_20230927_053130_ExeKotlin](https://github.com/SeuHokage/exeKotlin/assets/54119888/92f5caf2-4854-4aba-841f-aca47cc40c26)
+<p float="left">
 
-![Screenshot_20230927_053211_ExeKotlin](https://github.com/SeuHokage/exeKotlin/assets/54119888/4eb7697b-ce8f-4886-b518-ae1e43bc3fbc)
+<img src="https://github.com/SeuHokage/exeKotlin/assets/54119888/a89dcec0-5d31-4ee8-8c97-12b3db09cd95" width="600" />
+
+</p>
+
+# Caso seja do seu interesse olhar melhor quais são os exercicios e até realiza-los em busca de aprendizado vou disponibilizar o link do mesmo.
+
+## [Lista com os exercicios!!](https://docs.google.com/document/d/11x7oST-eInszg16hkSrhc1FKYngvwK_4-0WEWyKJh20/edit?usp=sharing)
+
+# Envolvidos
+
+## Lucas Ferreira (Criador dos Exercicios)
+https://www.linkedin.com/in/lucas-febatis
+
+## Vinicius Watanabe (Aprendiz)
+https://www.linkedin.com/in/vinicius-watanabe
+
+## Guilherme Meireles (Aprendiz)
+https://www.linkedin.com/in/gui-meireles/
 
 
-LISTA DE EXERCICIOS = https://docs.google.com/document/d/11x7oST-eInszg16hkSrhc1FKYngvwK_4-0WEWyKJh20/edit?usp=sharing
