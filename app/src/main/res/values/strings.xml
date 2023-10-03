@@ -18,4 +18,6 @@
     <string name="age">Idade</string>
     <string name="height">Altura</string>
     <string name="Weight">Peso</string>
+    <string name="Wage">Salário em reais</string>
+    <string name="Readjustment">Calcular Reajuste</string>
 </resources>
